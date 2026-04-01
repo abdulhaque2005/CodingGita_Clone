@@ -36,44 +36,40 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center gap-1 ml-2">
             <Link
               to="/dashboard"
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === "/dashboard"
-                  ? "bg-neutral-800 text-white"
-                  : "text-neutral-300 hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === "/dashboard"
+                ? "bg-neutral-800 text-white"
+                : "text-neutral-300 hover:bg-neutral-800"
+                }`}
             >
               Dashboard
             </Link>
 
             <Link
               to="/attendance"
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === "/attendance"
-                  ? "bg-neutral-800 text-white"
-                  : "text-neutral-300 hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === "/attendance"
+                ? "bg-neutral-800 text-white"
+                : "text-neutral-300 hover:bg-neutral-800"
+                }`}
             >
               Attendance
             </Link>
 
             <Link
               to="/calendar"
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === "/calendar"
-                  ? "bg-neutral-800 text-white"
-                  : "text-neutral-300 hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === "/calendar"
+                ? "bg-neutral-800 text-white"
+                : "text-neutral-300 hover:bg-neutral-800"
+                }`}
             >
               Calendar
             </Link>
 
             <Link
               to="/chat"
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === "/chat"
-                  ? "bg-neutral-800 text-white"
-                  : "text-neutral-300 hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === "/chat"
+                ? "bg-neutral-800 text-white"
+                : "text-neutral-300 hover:bg-neutral-800"
+                }`}
             >
               Chat
             </Link>
@@ -86,7 +82,7 @@ export default function Navbar() {
 
               <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-150 absolute left-0 mt-2 w-48 rounded-lg border border-neutral-800 bg-neutral-900 shadow-xl">
                 <div className="p-2 space-y-1">
-                  <Link 
+                  <Link
                     to="/semester-attendance"
                     className="block px-3 py-2 text-sm hover:bg-neutral-800 rounded text-neutral-300 hover:text-white transition-colors"
                   >
@@ -94,14 +90,16 @@ export default function Navbar() {
                   </Link>
 
                   <div className="px-3 py-2 text-sm hover:bg-neutral-800 rounded">
-                    Feedback
+                    <Link to='/feedback' className="block px-3 text-sm hover:bg-neutral-800 rounded text-neutral-300 hover:text-white transition-colors">
+                      Feedback
+                    </Link>
                   </div>
 
                   <div className="px-3 py-2 text-sm hover:bg-neutral-800 rounded">
                     Weekly Subject Feedback
                   </div>
 
-                 <Link 
+                  <Link
                     to="/apply-leave"
                     className="block px-3 py-2 text-sm hover:bg-neutral-800 rounded text-neutral-300 hover:text-white transition-colors"
                   >
@@ -117,7 +115,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           {/* SETTINGS DROPDOWN */}
           <div className="relative group hidden md:block">
-            <Link 
+            <Link
               to="/profile"
               className="p-2 block rounded-md text-neutral-300 hover:text-white hover:bg-neutral-800"
             >
@@ -182,44 +180,40 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto flex flex-col gap-1">
             <Link
               to="/dashboard"
-              className={`px-3 py-2 rounded transition-colors ${
-                location.pathname === "/dashboard"
-                  ? "bg-neutral-800 text-white"
-                  : "hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded transition-colors ${location.pathname === "/dashboard"
+                ? "bg-neutral-800 text-white"
+                : "hover:bg-neutral-800"
+                }`}
             >
               Dashboard
             </Link>
 
             <Link
               to="/attendance"
-              className={`px-3 py-2 rounded transition-colors ${
-                location.pathname === "/attendance"
-                  ? "bg-neutral-800 text-white"
-                  : "hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded transition-colors ${location.pathname === "/attendance"
+                ? "bg-neutral-800 text-white"
+                : "hover:bg-neutral-800"
+                }`}
             >
               Attendance
             </Link>
 
             <Link
               to="/calendar"
-              className={`px-3 py-2 rounded transition-colors ${
-                location.pathname === "/calendar"
-                  ? "bg-neutral-800 text-white"
-                  : "hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded transition-colors ${location.pathname === "/calendar"
+                ? "bg-neutral-800 text-white"
+                : "hover:bg-neutral-800"
+                }`}
             >
               Calendar
             </Link>
 
             <Link
               to="/chat"
-              className={`px-3 py-2 rounded transition-colors ${
-                location.pathname === "/chat"
-                  ? "bg-neutral-800 text-white"
-                  : "hover:bg-neutral-800"
-              }`}
+              className={`px-3 py-2 rounded transition-colors ${location.pathname === "/chat"
+                ? "bg-neutral-800 text-white"
+                : "hover:bg-neutral-800"
+                }`}
             >
               Chat
             </Link>
@@ -249,7 +243,7 @@ export default function Navbar() {
               View Profile
             </div>
 
-            <div 
+            <div
               onClick={handleLogout}
               className="px-3 py-2 hover:bg-neutral-800 rounded cursor-pointer text-red-400"
             >

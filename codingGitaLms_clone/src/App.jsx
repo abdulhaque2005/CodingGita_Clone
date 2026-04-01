@@ -10,6 +10,7 @@ import SemesterAttendance from "./Pages/SemesterAttendance";
 import Profile from "./Pages/Profile";
 import Chat from "./Pages/Chat";
 import Leave from "./Pages/Leave";
+import Feedback from "./pages/Feedback";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/chat" element={<Chat />} />
       <Route path="/apply-leave" element={<Leave />} />
-
+      <Route path="/feedback" element={<Feedback />} />
     </Routes>
   );
 }
