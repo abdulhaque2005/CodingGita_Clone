@@ -11,6 +11,8 @@ import Profile from "./Pages/Profile";
 import Chat from "./Pages/Chat";
 import Leave from "./Pages/Leave";
 import Feedback from "./pages/Feedback";
+import Events from "./Pages/Events";
+import Assignments from "./Pages/Assignments";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Route path="/chat" element={<Chat />} />
       <Route path="/apply-leave" element={<Leave />} />
       <Route path="/feedback" element={<Feedback />} />
+      <Route path="/events" element={<Events />} />
+      <Route path="/assignments" element={<Assignments />} />
     </Routes>
   );
 }

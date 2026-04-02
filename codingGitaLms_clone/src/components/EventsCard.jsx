@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function EventsCard({ events }) {
   return (
@@ -11,9 +12,9 @@ export default function EventsCard({ events }) {
           <div className="flex items-center gap-3 text-sm text-neutral-400">
             <span>{events.length} shown</span>
 
-            <span className="text-xs underline hover:text-white cursor-pointer">
+            <Link to="/events" className="text-xs underline hover:text-white cursor-pointer">
               View all
-            </span>
+            </Link>
           </div>
         </div>
       </div>

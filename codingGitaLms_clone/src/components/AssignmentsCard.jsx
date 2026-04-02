@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AssignmentsCard({ assignments, pending }) {
   return (
@@ -16,9 +17,9 @@ export default function AssignmentsCard({ assignments, pending }) {
           <div className="flex items-center gap-3 text-sm text-neutral-400">
             <span>Pending: {pending}</span>
 
-            <span className="text-xs underline hover:text-white cursor-pointer">
+            <Link to="/assignments" className="text-xs underline hover:text-white cursor-pointer transition-colors block">
               View all
-            </span>
+            </Link>
           </div>
         </div>
       </div>
